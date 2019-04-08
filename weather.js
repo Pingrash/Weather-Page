@@ -2,6 +2,8 @@
 Project by Lachlan Mackenzie
 
 Weather page based on tutorial by youtuber PortEXE (https://youtu.be/ZPG2wGNj6J4)
+
+See readme on GitHub for list of changes and additions (https://github.com/Pingrash/Weather-Page/blob/master/readme.md)
 */
 
 // My OpenWeatherMap appId
@@ -19,6 +21,9 @@ document.querySelector("#searchInput").addEventListener("keyup", (event) => {
     document.querySelector("#searchButton").click();
   }
 });
+
+// Add event listener to reset the weather-container on screen resize. Should prevent the weather-container from bugging out on resize
+document.body.addEventListener("resize", setPostionForWeatherInfo);
 
 // Function to determine what search method needs to be used based on the users input
 function getSearchMethod(searchTerm){

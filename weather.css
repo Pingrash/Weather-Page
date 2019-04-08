@@ -37,6 +37,14 @@ body{
   opacity: 1;
 }
 
+.about-h2{
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  font-size: 16px;
+  font-weight: 400;
+}
+
 /* Search Box */
 .searchControl{
   vertical-align: top;
@@ -68,6 +76,7 @@ body{
   border-radius: 5px;
   padding: 10px;
   margin-left: 1rem;
+  cursor: pointer;
 }
 
 #windUnits{
